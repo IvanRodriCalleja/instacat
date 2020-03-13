@@ -48,3 +48,12 @@ export const searchCats = search =>
       resolve(search ? [catsSearch[search]] : cats);
     }, responseTime);
   });
+
+export const fetchCat = id =>
+  new Promise(resolve => {
+    const responseTime = Math.random() * 3 * 1000;
+
+    setTimeout(() => {
+      resolve(cats[id]);
+    }, responseTime);
+  });
