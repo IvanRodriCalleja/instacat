@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import { NormalFetchData } from "./modules/NormalFetchData";
 import { NormalFetchError } from "./modules/NormalFetchError";
@@ -13,6 +13,7 @@ import { SuspenseFetchList } from "./modules/SuspenseFetchList";
 
 export const Routes = () => (
   <Switch>
+    <Redirect exact={true} from="/" to="/normal-fetch-data" />
     <Route path="/normal-fetch-data">
       <NormalFetchData />
     </Route>
