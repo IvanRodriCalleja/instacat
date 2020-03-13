@@ -8,7 +8,7 @@ import { fetchCats } from "../service/catsApi";
 
 export const SuspenseFetchData = () => {
   return (
-    <Suspense fallback={<CatsSkeleton />} maxDuration={2000}>
+    <Suspense fallback={<CatsSkeleton />}>
       <Pets />
     </Suspense>
   );

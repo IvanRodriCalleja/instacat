@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { SkeletonCard } from "./petsSkeleton/SkeletonCard";
+import { SkeletonCard } from "./catsSkeleton/SkeletonCard";
 
 const SkeletonListContainer = styled.section`
-  display: flex;
-  justify-content: center;
   margin-top: 56px;
 `;
 

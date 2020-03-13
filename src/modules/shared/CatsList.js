@@ -4,8 +4,6 @@ import styled from "styled-components";
 import { CatCard } from "./catsList/CatCard";
 
 const CatsListContainer = styled.section`
-  display: flex;
-  justify-content: center;
   margin-top: 56px;
 `;
 

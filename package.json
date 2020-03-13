@@ -5,9 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.13.0",
+    "react": "0.0.0-experimental-235a6c4af",
     "react-cache": "file:./packages/react-cache",
-    "react-dom": "16.13.0",
+    "react-dom": "0.0.0-experimental-235a6c4af",
     "react-router-dom": "5.1.2",
     "react-scripts": "2.1.8",
     "styled-components": "5.0.1"

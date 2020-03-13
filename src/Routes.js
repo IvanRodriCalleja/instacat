@@ -8,6 +8,7 @@ import { NormalFetchRaceCondition } from "./modules/NormalFetchRaceCondition";
 import { SuspenseFetchData } from "./modules/SuspenseFetchData";
 import { SuspenseFetchError } from "./modules/SuspenseFetchError";
 import { SuspenseFetchRaceCondition } from "./modules/SuspenseFetchRaceCondition";
+import { SuspenseFetchList } from "./modules/SuspenseFetchList";
 
 export const Routes = () => (
   <Switch>
@@ -28,6 +29,9 @@ export const Routes = () => (
     </Route>
     <Route path="/suspense-fetch-race-condition">
       <SuspenseFetchRaceCondition />
+    </Route>
+    <Route path="/suspense-fetch-list">
+      <SuspenseFetchList />
     </Route>
   </Switch>
 );
