@@ -17,7 +17,7 @@ const AppHeader = styled.header`
 
 const AppHeaderContainer = styled.div`
   display: flex;
-  display: 0 16px;
+  padding: 0 16px;
   align-items: center;
   width: 100%;
   max-width: ${({ theme }) => theme.maxContentWidth};
