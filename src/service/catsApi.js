@@ -49,7 +49,7 @@ export const searchCats = search =>
     }, responseTime);
   });
 
-export const fetchCat = id =>
+export const fetchCat = ({ id }) =>
   new Promise(resolve => {
     const responseTime = Math.random() * 3 * 1000;
 

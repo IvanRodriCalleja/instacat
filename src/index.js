@@ -10,12 +10,11 @@ import { theme } from "./styles/theme";
 
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(
+ReactDOM.createRoot(rootElement).render(
   <ThemeProvider theme={theme}>
     <GlobalStyles />
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </ThemeProvider>,
-  rootElement
+  </ThemeProvider>
 );

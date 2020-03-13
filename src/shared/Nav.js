@@ -95,6 +95,11 @@ export const Nav = () => {
             Load data race condition
           </Link>
         </SubNavItem>
+        <SubNavItem>
+          <Link activeClassName="active" to="/normal-fetch-list">
+            Load data list
+          </Link>
+        </SubNavItem>
       </SubNavList>
 
       <SubNavTitle>Suspense fetch</SubNavTitle>

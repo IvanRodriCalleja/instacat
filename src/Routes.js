@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import { NormalFetchData } from "./modules/NormalFetchData";
 import { NormalFetchError } from "./modules/NormalFetchError";
 import { NormalFetchRaceCondition } from "./modules/NormalFetchRaceCondition";
+import { NormalFetchList } from "./modules/NormalFetchList";
 
 import { SuspenseFetchData } from "./modules/SuspenseFetchData";
 import { SuspenseFetchError } from "./modules/SuspenseFetchError";
@@ -20,6 +21,9 @@ export const Routes = () => (
     </Route>
     <Route path="/normal-fetch-race-condition">
       <NormalFetchRaceCondition />
+    </Route>
+    <Route path="/normal-fetch-list">
+      <NormalFetchList />
     </Route>
     <Route path="/suspense-fetch-data">
       <SuspenseFetchData />

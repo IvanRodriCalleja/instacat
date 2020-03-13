@@ -1,13 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const options = [
-  "sukiicat",
-  "albertbabycat",
-  "smoothiethecat",
-  "realgrumpycat"
-];
-
 const SearchContainer = styled.div`
   margin-top: 56px;
   display: flex;
@@ -46,17 +39,18 @@ const SearchInput = styled.input`
   }
 `;
 
-export const Search = ({ search, onSearch }) => {
+export const RadioGroup = ({ selectedValue, onChange, options, name }) => {
   return (
     <SearchContainer>
       {options.map(option => (
         <InputContainer key={option}>
           <SearchInput
             id={option}
+            name={name}
             type="radio"
             value={option}
-            checked={option === search}
-            onChange={event => onSearch(event.target.value)}
+            checked={option === selectedValue}
+            onChange={event => onChange(event.target.value)}
           />
           <SearchLabel htmlFor={option}>{option}</SearchLabel>
         </InputContainer>
