@@ -3,9 +3,16 @@ import React, { useState, useEffect } from "react";
 import { CatsSkeleton } from "./shared/CatsSkeleton";
 import { CatsError } from "./shared/CatsError";
 import { CatsList } from "./shared/CatsList";
-import { Search } from "./shared/Search";
+import { RadioGroup } from "./shared/RadioGroup";
 
 import { searchCats } from "../service/catsApi";
+
+const options = [
+  "sukiicat",
+  "albertbabycat",
+  "smoothiethecat",
+  "realgrumpycat"
+];
 
 export const NormalFetchRaceCondition = () => {
   const [search, setSearch] = useState("");
@@ -26,7 +33,7 @@ export const NormalFetchRaceCondition = () => {
 
   return (
     <>
-      <Search search={search} onSearch={setSearch} />
+      <RadioGroup selectedValue={search} onChange={setSearch} options={options} name="search" />
       {isLoading && <CatsSkeleton />}
       {error && <CatsError error={error} />}
       {!isLoading && !error && <CatsList cats={data} />}

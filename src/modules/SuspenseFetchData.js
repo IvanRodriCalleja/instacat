@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { unstable_createResource as createResource } from "react-cache";
+import { unstable_createResource as createResource } from "../packages/react-cache";
 
 import { CatsSkeleton } from "./shared/CatsSkeleton";
 import { CatsList } from "./shared/CatsList";
