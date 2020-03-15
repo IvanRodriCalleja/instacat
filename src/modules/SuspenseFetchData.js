@@ -3,14 +3,17 @@ import { unstable_createResource as createResource } from "../packages/react-cac
 
 import { CatsSkeleton } from "./shared/CatsSkeleton";
 import { CatsList } from "./shared/CatsList";
+import { ErrorBoundary } from "./shared/ErrorBoundary";
 
 import { fetchCats } from "../service/catsApi";
 
 export const SuspenseFetchData = () => {
   return (
-    <Suspense fallback={<CatsSkeleton />}>
-      <Pets />
-    </Suspense>
+    <ErrorBoundary>
+      <Suspense fallback={<CatsSkeleton />}>
+        <Pets />
+      </Suspense>
+    </ErrorBoundary>
   );
 };
 
